@@ -1,11 +1,11 @@
 __all__ = []
 
-from tools import *
-import tools
+from scikits.talkbox.tools import *
+import scikits.talkbox.tools as tools
 __all__ += tools.__all__
 
-import linpred
-from linpred import *
+import scikits.talkbox.linpred as linpred
+from scikits.talkbox.linpred import *
 __all__ += linpred.__all__
 
 import version

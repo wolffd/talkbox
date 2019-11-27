@@ -1,10 +1,10 @@
 __all__ = []
 
-from common import *
-import common
+from scikits.talkbox.linpred.common import *
+import scikits.talkbox.linpred.common as common
 __all__ += common.__all__
 
-from levinson_lpc import *
-import levinson_lpc
+from scikits.talkbox.linpred.levinson_lpc import *
+import scikits.talkbox.linpred.levinson_lpc as levinson_lpc 
 __all__ += levinson_lpc.__all__
 
