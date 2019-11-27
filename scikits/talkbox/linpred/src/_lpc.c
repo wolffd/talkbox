@@ -227,5 +227,7 @@ static struct PyModuleDef c_lpc =
 };
 PyMODINIT_FUNC PyInit__lpc(void)
 {
-    return PyModule_Create(&c_lpc);
+    PyMODINIT_FUNC u = PyModule_Create(&c_lpc);
+    import_array();
+    return u;
 }
