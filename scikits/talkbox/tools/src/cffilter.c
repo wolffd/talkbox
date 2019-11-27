@@ -714,16 +714,14 @@ static PyObject *__pyx_pf_8cffilter_cslfilter(PyObject *__pyx_self, PyObject *__
  *         raise ValueError("Number of filters should be the same")
  * 
  *     if not nfr == x.shape[0]:             # <<<<<<<<<<<<<<
- *         raise ValueError, \
- *               "Number of filters and number of frames should be the same"
+ *         raise ValueError("Number of filters and number of frames should be the same")
  */
   __pyx_4 = (!(__pyx_v_nfr == (__pyx_v_x->dimensions[0])));
   if (__pyx_4) {
 
     /* "/usr/data/david/src/dsp/scikits/trunk/talkbox/scikits/talkbox/tools/src/cffilter.pyx":59
  *     if not nfr == x.shape[0]:
- *         raise ValueError, \
- *               "Number of filters and number of frames should be the same"             # <<<<<<<<<<<<<<
+ *         raise ValueError ("Number of filters and number of frames should be the same" )
  * 
  *     tx = np.ascontiguousarray(x, dtype=dt)
  */

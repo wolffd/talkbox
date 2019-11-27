@@ -260,14 +260,14 @@ class _LevinsonCommon(TestCase):
         try:
             self.levinson_func(self.X0, 1)
             self.fail("levinson func succeed with bad argument !")
-        except ValueError, e:
+        except ValueError as e:
             assert str(e) == "Order should be <= size-1"
 
         # Check empty input
         try:
             self.levinson_func([], 1)
             self.fail("levinson func succeed with bad argument !")
-        except ValueError, e:
+        except ValueError as e:
             assert str(e) == "Cannot operate on empty array !"
 
 class TestLevinsonPyBackend(_LevinsonCommon):
