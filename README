@@ -1,3 +1,5 @@
+*This is an so far failed attempt to port the library to Python 3.7*
+
 talkbox is a scikit for signal/speech processing, to extend scipy capabilities
 in that domain.
 
